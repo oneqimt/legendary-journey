@@ -8,6 +8,7 @@
 # Set up
 #### Set up accounts with Pinecone, OpenAI, Streamlit, HuggingFace
 #### Requires Python 3.9 and higher
+#### Used IntelliJ/PyCharm IDE to set up virtual environment. Could do other ways as well.
 #### Create a file named .env in project root
 #### Add these vars
 
