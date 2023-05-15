@@ -1,4 +1,3 @@
-import os
 import openai
 import settings as s
 
