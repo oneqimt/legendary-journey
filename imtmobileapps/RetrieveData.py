@@ -21,10 +21,21 @@ index = pinecone.Index(index_name)
 print(index.describe_index_stats())
 
 # Now we search, for this we need to create a query vector xq:
+# "Which training method should I use for sentence transformers when " +
+# "I only have pairs of related sentences?"
+
+# "Transformers incorporate a mechanism called self-attention, " +
+#         "which allows them to learn relationships between different positions in a sequence. " +
+#         "Explain Self-attention and disambiguation"
+# How are embeddings utilized in large language models?
+
+# PyTorch data loader
 limit = 3750
 query = (
-        "Which training method should I use for sentence transformers when " +
-        "I only have pairs of related sentences?"
+
+    "What are AI agents and how does it differ from ChatGPT?"
+
+
 )
 
 

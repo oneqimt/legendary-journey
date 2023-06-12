@@ -10,6 +10,8 @@ from time import sleep
 # https://docs.pinecone.io/docs/gen-qa-openai
 
 index_name = s.PINECONE_INDEX_NAME
+print("INDEX NAME is ", index_name)
+
 # initialize connection to pinecone
 pinecone.init(
     api_key=s.PINECONE_API_KEY,

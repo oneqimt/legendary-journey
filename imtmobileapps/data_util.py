@@ -17,6 +17,3 @@ def complete(prompt):
         stop=None
     )
     return response['choices'][0]['text'].strip()
-
-
-
