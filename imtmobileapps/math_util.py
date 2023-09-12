@@ -1,7 +1,15 @@
-# You can do it using a priority queue or a heap in Python. Here's how you can do it:
-
 import heapq
 
+
+# You can do it using a priority queue or a heap in Python. Here's how you can do it:
+# The `heap[0]` operation always gives the smallest element.
+# `heapreplace()` pop and return the smallest element,
+# and push the new item on the heap, maintaining heap invariance.
+# And Time complexity is O(n).
+
+# Note: This will work even when there are less than 3 numbers in the array.
+# And when there are duplicate largest numbers, it will consider the duplicates
+# as separate numbers
 
 def top_three(nums):
     """ Returns the three largest numbers in nums"""
@@ -17,12 +25,3 @@ def top_three(nums):
 input = [1, 4328, 6, 8, 0, 3, 5, 6, 8, 92]
 
 print(top_three(input))
-
-# The `heap[0]` operation always gives the smallest element.
-# `heapreplace()` pop and return the smallest element,
-# and push the new item on the heap, maintaining heap invariance.
-# And Time complexity is O(n).
-
-# Note: This will work even when there are less than 3 numbers in the array.
-# And when there are duplicate largest numbers, it will consider the duplicates
-# as separate numbers, e.g
