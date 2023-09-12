@@ -14,7 +14,6 @@ pinecone.init(
     environment=s.PINECONE_ENV
 )
 
-
 # connect to index
 index = pinecone.Index(index_name)
 # view index stats
@@ -28,14 +27,13 @@ print(index.describe_index_stats())
 #         "which allows them to learn relationships between different positions in a sequence. " +
 #         "Explain Self-attention and disambiguation"
 # How are embeddings utilized in large language models?
+# What are AI agents and how does it differ from ChatGPT?
+# What are hallucinations when prompting a Large Language Model?
+# What is a PyTorch data loader?
 
-# PyTorch data loader
 limit = 3750
 query = (
-
-    "What are AI agents and how does it differ from ChatGPT?"
-
-
+        "Explain Self-attention and disambiguation"
 )
 
 
@@ -87,4 +85,3 @@ print(query_with_contexts)
 # then we complete the context-infused query
 response = data_util.complete(query_with_contexts)
 print('RESPONSE is: ', response)
-
