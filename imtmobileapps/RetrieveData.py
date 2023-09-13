@@ -33,7 +33,7 @@ print(index.describe_index_stats())
 
 limit = 3750
 query = (
-        "Explain Self-attention and disambiguation"
+        "What are hallucinations when prompting a Large Language Model?"
 )
 
 
