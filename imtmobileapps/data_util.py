@@ -5,9 +5,9 @@ openai.api_key = s.OPENAI_API_KEY
 
 
 def complete(prompt):
-    # query text-davinci-003
+    # query - text-davinci-003
     response = openai.Completion.create(
-        engine='text-davinci-003',
+        engine='gpt-3.5-turbo-instruct',
         prompt=prompt,
         temperature=0,
         max_tokens=400,
