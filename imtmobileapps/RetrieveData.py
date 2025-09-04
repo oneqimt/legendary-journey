@@ -30,10 +30,12 @@ print(index.describe_index_stats())
 # What are AI agents and how does it differ from ChatGPT?
 # What are hallucinations when prompting a Large Language Model?
 # What is a PyTorch data loader?
+# Please explain what a Vector Database is.
 
 limit = 3750
 query = (
-    "How are embeddings utilized in large language models?"
+    "what are transformers"
+
 )
 
 

@@ -1,4 +1,5 @@
 import heapq
+from tkinter.constants import CENTER
 
 
 # You can do it using a priority queue or a heap in Python. Here's how you can do it:
@@ -22,6 +23,35 @@ def top_three(nums):
     return [heapq.heappop(heap) for _ in range(3)][::-1]
 
 
-input = [1, 4328, 6, 8, 0, 3, 5, 6, 8, 92]
+myInput = [1, 4328, 6, 8, 0, 3, 5, 6, 8, 92]
 
-print(top_three(input))
+print(top_three(myInput))
+
+
+# run this from the terminal - 'python math_util.py'
+def decimal_to_binary(decimal):
+    if decimal == 0:
+        return "0"
+    binary = ""
+    num = abs(decimal)
+    while num > 0:
+        binary = str(num % 2) + binary
+        num //= 2
+    return binary if decimal >= 0 else "-" + binary
+# enter decimal number
+print(decimal_to_binary())
+
+def binary_to_decimal(binary):
+    if binary.startswith("-"):
+        sign = -1
+        binary = binary[1:]
+    else:
+        sign = 1
+    decimal = 0
+    for digit in binary:
+        if digit not in "01":
+            raise ValueError("Invalid binary string")
+        decimal = decimal * 2 + int(digit)
+    return sign * decimal
+# enter binary as string
+print(binary_to_decimal(""))

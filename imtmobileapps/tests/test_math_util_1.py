@@ -2,7 +2,7 @@ from imtmobileapps.math_util import top_three
 
 # PyTest in IntelliJ
 # https://www.jetbrains.com/help/idea/pytest.html
-my_nums = [1, 4328, 6, 8, 0, 3, 5, 6, 8, 92]
+my_nums = [1, 4328, 6, 6, 8, 0, 3, 5, 6, 8, 92]
 
 
 def test_result():
